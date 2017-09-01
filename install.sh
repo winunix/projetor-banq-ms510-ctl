@@ -12,4 +12,5 @@ cp *.service /etc/systemd/system/
 
 systemctl enable projetor-on.service
 systemctl enable projetor-off.service
+systemctl start projetor-off.service
 
