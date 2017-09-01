@@ -1,0 +1,12 @@
+[Unit]
+Description=Executado ao Desligar e Reiniciar
+Conflicts=reboot.target
+
+[Service]
+Type=oneshot
+User=root
+RemainAfterExit=true
+ExecStop=/usr/banq-ms510-ctl/projetor-off
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Executado ao Ligar
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/banq-ms510-ctl/projetor-on
+
+[Install]
+WantedBy=multi-user.target

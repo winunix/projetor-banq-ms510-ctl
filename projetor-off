@@ -1,0 +1,9 @@
+#!/bin/bash
+
+isReboot=$(systemctl list-jobs | grep 'reboot.target')
+
+if [ "$isReboot" == "" ]; then
+   cd /usr/banq-ms510-ctl/
+   cat poff.txt > /dev/ttyS1
+fi
+

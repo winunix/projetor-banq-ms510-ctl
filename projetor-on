@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /usr/banq-ms510-ctl/
+cat pon.txt > /dev/ttyS1
+
