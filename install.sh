@@ -5,9 +5,9 @@ if [ "$(id -u)" != "0" ]; then
  exit
 fi
 
-mkdir /usr/banq-ms510-ctl/ -p
-cp *.txt /usr/banq-ms510-ctl/
-cp projetor-* /usr/banq-ms510-ctl/
+mkdir /usr/Proinfo-clt/ -p
+cp *.txt /usr/Proinfo-clt/
+cp projetor-* /usr/Proinfo-clt/
 cp *.service /etc/systemd/system/
 
 systemctl enable projetor-on.service
